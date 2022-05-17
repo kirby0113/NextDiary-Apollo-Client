@@ -11,8 +11,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "apollo:download": "apollo client:download-schema type/schema.graphql",
-    "apollo:codegen": "apollo client:codegen --target=typescript --localSchemaFile=type/schema.graphql"
+    "apollo:download": "apollo client:download-schema schema.graphql",
+    "apollo:codegen": "apollo client:codegen --target=typescript --localSchemaFile=schema.graphql types"
   },
   "dependencies": {
     "@apollo/client": "^3.6.2",
