@@ -2,7 +2,7 @@
   "name": "next-diary",
   "version": "0.1.0",
   "private": true,
-  "resolutions":{
+  "resolutions": {
     "graphql": "14.0.2 - 14.2.0 || ^14.3.1 || ^15.0.0",
     "graphql-tag": "2.12.6"
   },
@@ -11,8 +11,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "apollo:download":"apollo client:download-schema type/schema.json",
-    "apollo:codegen": "apollo client:codegen --target=typescript --localSchemaFile=type/schema.json"
+    "apollo:download": "apollo client:download-schema type/schema.graphql",
+    "apollo:codegen": "apollo client:codegen --target=typescript --localSchemaFile=type/schema.graphql"
   },
   "dependencies": {
     "@apollo/client": "^3.6.2",
@@ -21,6 +21,7 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@types/graphql": "^14.5.0",
     "@types/node": "17.0.33",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",

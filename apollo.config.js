@@ -1,7 +1,7 @@
 module.exports = {
   client: {
     name: "next-diary",
-    includes: ["./app/**/*.{ts,tsx,js,jsx,graphql}"],
+    includes: ["queries/**/*.{ts,tsx,js,jsx,gql}"],
     tagName: "gql",
     addTypename: true,
     service: {
