@@ -11,9 +11,7 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<PrimaryButtonProps> = (args) => (
-  <PrimaryButtonComponent {...args} />
-);
+const Template: Story<PrimaryButtonProps> = (args) => <PrimaryButtonComponent {...args} />;
 
 export const PrimaryButton = Template.bind({});
 PrimaryButton.args = {
