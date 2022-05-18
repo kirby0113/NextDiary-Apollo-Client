@@ -12,3 +12,18 @@ export const ButtonPadding = {
     y: "15px",
   },
 } as const;
+
+export const InputPadding = {
+  small: {
+    x: "5px",
+    y: "8px",
+  },
+  medium: {
+    x: "6px",
+    y: "11px",
+  },
+  large: {
+    x: "8px",
+    y: "14px",
+  },
+} as const;
