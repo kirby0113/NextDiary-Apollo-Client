@@ -16,5 +16,5 @@ const Template: Story<<%= name %>Props> = (args) => <<%= name %>Component {...ar
 
 export const <%= name %> = Template.bind({});
 <%= name %>.args = {
-  purpose:"purpose",
+  children:"children",
 };

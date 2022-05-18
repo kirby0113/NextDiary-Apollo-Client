@@ -11,7 +11,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-type": "graphql-codegen --config codegen.yml",
+    "generate:type": "graphql-codegen --config codegen.yml",
+    "generate:component":"yarn hygen components add",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
