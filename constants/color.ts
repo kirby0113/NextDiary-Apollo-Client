@@ -1,12 +1,18 @@
+export const Colors = {
+  white: "#fcfcfc",
+  black: "#111111",
+  darkgrey: "#333333",
+} as const;
+
 export const ButtonColor = {
   white: {
-    background: "#fafafa",
-    border: "#333333",
-    text: "#333333",
+    background: Colors.white,
+    border: Colors.darkgrey,
+    text: Colors.darkgrey,
   },
   black: {
-    background: "#333333",
-    border: "#000000",
-    text: "#ffffee",
+    background: Colors.darkgrey,
+    border: Colors.black,
+    text: Colors.white,
   },
 } as const;

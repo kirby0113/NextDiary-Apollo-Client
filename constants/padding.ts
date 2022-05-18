@@ -1,14 +1,14 @@
 export const ButtonPadding = {
   small: {
-    x: "5px",
+    x: "15px",
     y: "3px",
   },
   medium: {
-    x: "15px",
+    x: "30px",
     y: "7px",
   },
   large: {
-    x: "25px",
+    x: "45px",
     y: "15px",
   },
 } as const;
