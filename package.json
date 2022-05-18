@@ -11,10 +11,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-type": "graphql-codegen --config codegen.yml",
+    "generate:type": "graphql-codegen --config codegen.yml",
+    "generate:component":"yarn hygen components add",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "component:add":"yarn hygen components add"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@apollo/client": "^3.6.2",
