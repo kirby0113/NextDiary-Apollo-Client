@@ -7,6 +7,7 @@ import { InputPadding } from "../constants/padding";
 export type InputBoxProps = {
   boxSize?: keyof typeof InputPadding;
   fontSize?: keyof typeof FontSize;
+  id?: string & String;
 };
 
 const StyledInputBox = styled.input<{ boxSize: keyof typeof InputPadding; fontSize: keyof typeof FontSize }>`
@@ -17,6 +18,6 @@ const StyledInputBox = styled.input<{ boxSize: keyof typeof InputPadding; fontSi
   border-radius: 6px;
 `;
 
-export const InputBox: React.FC<InputBoxProps> = ({ boxSize = "medium", fontSize = "medium" }: InputBoxProps) => {
-  return <StyledInputBox boxSize={boxSize} fontSize={fontSize} />;
+export const InputBox: React.FC<InputBoxProps> = ({ boxSize = "medium", fontSize = "medium", id }: InputBoxProps) => {
+  return <StyledInputBox boxSize={boxSize} fontSize={fontSize} id={id} />;
 };
