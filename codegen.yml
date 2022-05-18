@@ -1,0 +1,8 @@
+schema: https://nestdiary.herokuapp.com/graphql
+documents: ./queries/*.ts
+generates:
+  ./types.d.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-graphql-request
