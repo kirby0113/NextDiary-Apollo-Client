@@ -9,6 +9,7 @@ export type InputBoxProps = {
   fontSize?: keyof typeof FontSize;
   id?: string & String;
   value: string;
+  type?: string;
   onChange: (value: string) => void;
 };
 
@@ -26,6 +27,7 @@ export const InputBox: React.FC<InputBoxProps> = ({
   fontSize = "medium",
   id,
   value,
+  type = "text",
   onChange,
 }: InputBoxProps) => {
   return (
@@ -34,6 +36,7 @@ export const InputBox: React.FC<InputBoxProps> = ({
       fontSize={fontSize}
       id={id}
       value={value}
+      type={type}
       onChange={(e) => onChange(e.target.value)}
     />
   );

@@ -25,6 +25,7 @@ export const StyledPrimaryButton = styled.div<{
   font-size: ${({ fontSize }) => FontSize[fontSize]};
   border-radius: 6px;
   cursor: pointer;
+  text-align: center;
   width: 100%;
 `;
 
