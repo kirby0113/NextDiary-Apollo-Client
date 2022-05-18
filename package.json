@@ -11,9 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate": "graphql-codegen",
-    "apollo:download": "apollo client:download-schema schema.graphql",
-    "apollo:codegen": "apollo client:codegen --target=typescript --localSchemaFile=schema.graphql types"
+    "generate-type": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@apollo/client": "^3.6.2",
