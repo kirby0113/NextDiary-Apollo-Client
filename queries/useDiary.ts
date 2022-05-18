@@ -17,3 +17,11 @@ const GET_DIARY = gql`
     }
   }
 `;
+
+const REGISTER = gql`
+  mutation Register($registerUserInput: RegisterUserInput!) {
+    register(registerUserInput: $registerUserInput) {
+      access_token
+    }
+  }
+`;
